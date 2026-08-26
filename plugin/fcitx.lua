@@ -32,7 +32,7 @@ function _Fcitx2NonLatin()
     vim.b.input_toggle_flag = false
   elseif vim.b.input_toggle_flag == true then
     -- switch to Non-Latin input
-    vim.fn.system(fcitx_cmd .. ' -o')
+    vim.fn.system(fcitx_cmd .. ' -s pinyin')
     vim.b.input_toggle_flag = false
   end
 end
